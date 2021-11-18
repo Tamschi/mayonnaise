@@ -32,9 +32,7 @@ mod private {
 
 /// Extension methods for working with [`Node`]s with dynamically-typed content.
 #[ext(MixedNodeExt)]
-pub impl<T, K: Ord, C: RefCounter> Node<T, K, dyn Dyncast, C> where Self: Sealed {
-	
-}
+pub impl<T, K: Ord, C: RefCounter> Node<T, K, dyn Dyncast, C> where Self: Sealed {}
 
 /// Extension methods for working with a [`Node`] that acts as instance registry by type.
 #[ext(InstanceRegistryNodeExt)]
